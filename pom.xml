@@ -410,7 +410,9 @@
     </repositories>
 
     <scm>
-        <developerConnection>scm:svn:https://svn.bonitasoft.org/bonita-connectors-6/branches/bonita-connectors/bonita-connectors-6.0.x</developerConnection>
+        <developerConnection>scm:git:git@github.com:bonitasoft/bonita-connectors.git</developerConnection>
+        <connection>scm:git:git@github.com:bonitasoft/bonita-connectors.git</connection>
+        <url>https://github.com/bonitasoft/bonita-connectors</url>
     </scm>
 
 </project>
