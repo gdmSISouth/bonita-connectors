@@ -33,10 +33,8 @@
     <dependencySets>
         <dependencySet>
             <excludes>
-                <exclude>org.bonitasoft*:bonita-common*</exclude>
-                <exclude>org.bonitasoft*:*-def</exclude>
-                <exclude>com.bonitasoft*:bonita-common*</exclude>
-                <exclude>com.bonitasoft*:*-def</exclude>
+                <exclude>com.gdmsisouth*:bonita-common*</exclude>
+                <exclude>com.gdmsisouth*:*-def</exclude>
             </excludes>
             <unpack>false</unpack>
             <scope>runtime</scope>
@@ -44,8 +42,7 @@
         </dependencySet>
         <dependencySet>
             <includes>
-                <include>org.bonitasoft*:*-def</include>
-                <include>com.bonitasoft*:*-def</include>
+                <include>com.gdmsisouth.bonita*:*-def</include>
             </includes>
             <unpack>true</unpack>
             <unpackOptions>

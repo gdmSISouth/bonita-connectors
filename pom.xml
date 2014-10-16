@@ -369,6 +369,19 @@
 						</configuration>
 					</execution>
 					<execution>
+						<id>set engine versions in descriptor</id>
+						<goals>
+							<goal>replace</goal>
+						</goals>
+						<configuration>
+							<filesToInclude>target/classes/descriptor.properties</filesToInclude>
+							<token>$bonita.engine.version$</token>
+							<value>${bonita.engine.version}</value>
+							<regex>false</regex>
+							<ignoreErrors>true</ignoreErrors>
+						</configuration>
+					</execution>
+					<execution>
 						<id>set connector definition version in .def</id>
 						<goals>
 							<goal>replace</goal>
@@ -404,13 +417,5 @@
 			</snapshots>
 		</repository>
 	</repositories>
-
-	<scm>
-		<developerConnection>scm:git:git@github.com:bonitasoft/bonita-connectors.git</developerConnection>
-		<connection>scm:git:git@github.com:bonitasoft/bonita-connectors.git</connection>
-		<url>https://github.com/bonitasoft/bonita-connectors</url>
-		<tag>HEAD</tag>
-	</scm>
-
 
 </project>
